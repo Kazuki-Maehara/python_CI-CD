@@ -13,7 +13,7 @@ jobs:
     steps:
 
       - name: Cache Docker layers
-        users: actions/cache@v2
+        uses: actions/cache@v2
         with:
           path: /tmp/.buildx-cache
           key: ${{ runner.os }}-buildx-${{ github.sha }}
